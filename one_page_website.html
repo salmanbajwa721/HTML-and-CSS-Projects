@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="A simple one-page website featuring an introduction, photo gallery, video, and contact form.">
+    <title>My One-Page Website</title>
+</head>
+
+<body>
+    <header id="home">
+        <h1>Welcome to My One-Page Website</h1>
+        <p>A simple website built with HTML and a little CSS.</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Pictures</a>
+        <a href="#videos">Videos</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About This Website</h2>
+            <p>Hello and welcome! This one-page website demonstrates common HTML elements, including headings,
+                paragraphs, images, a video embed, a contact form, navigation bookmarks, and a footer.</p>
+            <p>Use the navigation links above to jump directly to each section.</p>
+        </section>
+
+        <section id="gallery">
+            <h2>Picture Gallery</h2>
+            <p>Here are a few example photographs. Replace these image URLs with your own images if you prefer.</p>
+            <div class="gallery">
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=80"
+                        alt="Mountain landscape beside a lake">
+                    <figcaption>A peaceful mountain landscape</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"
+                        alt="Sunlit natural landscape">
+                    <figcaption>Exploring the outdoors</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=900&q=80"
+                        alt="Sunrise over a green field">
+                    <figcaption>A beautiful sunrise</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="videos">
+            <h2>Featured Video</h2>
+            <p>Watch this example video embedded from YouTube.</p>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube-nocookie.com/embed/ScMzIvxBSi4" title="Example video player"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Fill in the form below. This demonstration form needs a server or form service to actually send messages.
+            </p>
+            <form action="#" method="post">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div>
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </div>
+                <div>
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="What is your message about?">
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..."
+                        required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <p>&copy; 2026 My One-Page Website. Created for an HTML practice project.</p>
+        <p><a href="#home">Back to top</a></p>
+    </footer>
+</body>
+
+</html>
