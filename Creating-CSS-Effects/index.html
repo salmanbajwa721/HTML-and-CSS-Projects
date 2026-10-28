@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography and Image Hover Effects</title>
+
+    <!-- Import Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Custom typography */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f5f2;
+            color: #333;
+            text-align: center;
+            padding: 30px;
+            line-height: 1.7;
+        }
+
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+            color: #8b4565;
+        }
+
+        h1 {
+            font-size: 38px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        /* Image styling */
+        .gallery img {
+            width: 300px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 12px;
+            transition: transform 0.4s ease,
+                        filter 0.4s ease,
+                        box-shadow 0.4s ease;
+        }
+
+        /* Image hover effects */
+        .gallery img:hover {
+            transform: scale(1.08) rotate(2deg);
+            filter: brightness(1.1) saturate(1.2);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Beautiful Image Gallery</h1>
+    <p>Custom Google Fonts and CSS image hover effects.</p>
+
+    <h2>Explore the Gallery</h2>
+
+    <div class="gallery">
+        <img
+            src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600"
+            alt="Fashion and clothing display">
+    </div>
+
+</body>
+</html>
