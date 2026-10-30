@@ -4,69 +4,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Typography and Image Hover Effects</title>
+    <meta name="description" content="Discover easy and delicious recipes at Simple Recipes.">
+    <title>Simple Recipes</title>
 
-    <!-- Import Google Fonts -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
-    <style>
-        /* Custom typography */
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f9f5f2;
-            color: #333;
-            text-align: center;
-            padding: 30px;
-            line-height: 1.7;
-        }
-
-        h1, h2 {
-            font-family: 'Playfair Display', serif;
-            color: #8b4565;
-        }
-
-        h1 {
-            font-size: 38px;
-        }
-
-        p {
-            font-size: 16px;
-        }
-
-        /* Image styling */
-        .gallery img {
-            width: 300px;
-            height: 220px;
-            object-fit: cover;
-            border-radius: 12px;
-            transition: transform 0.4s ease,
-                        filter 0.4s ease,
-                        box-shadow 0.4s ease;
-        }
-
-        /* Image hover effects */
-        .gallery img:hover {
-            transform: scale(1.08) rotate(2deg);
-            filter: brightness(1.1) saturate(1.2);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Beautiful Image Gallery</h1>
-    <p>Custom Google Fonts and CSS image hover effects.</p>
+    <!-- Header and Navigation -->
+    <header id="home">
+        <nav class="navbar">
+            <h1 class="logo">Simple Recipes</h1>
 
-    <h2>Explore the Gallery</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
-    <div class="gallery">
-        <img
-            src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600"
-            alt="Fashion and clothing display">
-    </div>
+        <div class="hero">
+            <h2>Welcome to Simple Recipes</h2>
+            <p>Discover delicious recipes and make every meal special.</p>
+            <a href="#recipes" class="hero-button">Explore Recipes</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Recipes Section -->
+        <section id="recipes" class="recipes-section">
+            <h2>Our Recipes</h2>
+            <p class="section-intro">
+                Find inspiration for your next delicious meal.
+            </p>
+
+            <div class="recipe-container">
+                <div class="recipe-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=700&q=80"
+                        alt="A plate of pasta with fresh ingredients">
+                    <h3>Delicious Pasta</h3>
+                    <p>A comforting pasta dish made with fresh ingredients
+                        and flavorful seasonings.</p>
+                </div>
+
+                <div class="recipe-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=80"
+                        alt="A colorful fresh salad">
+                    <h3>Fresh Salad</h3>
+                    <p>A refreshing combination of vegetables and delicious
+                        flavors for a light meal.</p>
+                </div>
+
+                <div class="recipe-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=700&q=80"
+                        alt="A freshly baked pizza">
+                    <h3>Homemade Pizza</h3>
+                    <p>A tasty homemade pizza with a crispy crust and
+                        your favorite toppings.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <h2>About</h2>
+
+            <div class="about-content">
+                <p>
+                    Simple Recipes is your ultimate destination for
+                    easy-to-follow recipes that make cooking enjoyable
+                    for everyone, whether you're a seasoned chef or a beginner.
+                </p>
+
+                <p>
+                    Our mission is to inspire and empower you to create
+                    delicious meals with everyday ingredients and simple
+                    techniques. We offer a wide range of diverse cuisines,
+                    from classic comfort foods to international dishes,
+                    accompanied by helpful tips to make cooking easier.
+                </p>
+
+                <p>
+                    Our recipes are designed to help you feel confident
+                    in the kitchen and discover new flavors. At Simple Recipes,
+                    we believe that good food brings people together, and
+                    we're excited to have you join our community.
+                </p>
+
+                <p>
+                    Let's cook up something amazing together!
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <p>
+                Have a question or a recipe suggestion? We'd love to hear
+                from you!
+            </p>
+
+            <form action="#" method="post">
+                <label for="name">Your Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required>
+
+                <label for="email">Your Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required>
+
+                <label for="message">Your Message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Write your message here..."
+                    required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Simple Recipes. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
